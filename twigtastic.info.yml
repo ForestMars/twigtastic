@@ -1,0 +1,38 @@
+name: Twigtastic
+type: theme
+description: This is a twigtastic theme!
+package: Core
+version: VERSION
+core: 8.x
+regions:
+  banner: Banner
+  breadcrumb: Breadcrumb
+  content: Content
+  excerpt: Excerpt
+  footer: Footer
+  footer2: Footer 2
+  header: Header
+  help: Help
+  messages: Messages
+  ofnote: Of note
+  triptych_first: Triptych first
+  triptych_middle: Triptych middle
+  triptych_last: Triptych last
+
+
+Stylesheets:
+  all: 
+  - css/style.css
+  - css/style-1000px.css
+  - css/style-desktop.css
+  - css/style-mobile.css
+  - css/skel-noscript.css
+
+Scripts:
+  all:
+  - js/alert.js
+  - js/html5shiv.js
+  - js/jquery.dropotron.min
+  - js/jquery.min
+  - js/skel-panels.min  
+  - js/skel.min
