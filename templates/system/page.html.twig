@@ -7,18 +7,23 @@
 {{ twigtastic_css }}
 {{ twigtastic_js }}
 
+{% if is_front %}
 <body class="homepage">
-
+{% endif %}
   <!-- Header Wrapper -->
   <div id="header-wrapper">
 
+{% if is_front %}
 		<!-- Header -->
 		<div id="header" class="container">
         {% if page.header %}
         {{ page.header }}
         {% endif %}
-        
- <!-- Featured Wrapper -->
+  {% endif %}
+
+
+{% if is_front %}
+<!-- Featured Wrapper -->
 			<div id="features-wrapper">
 				<!-- Featured -->
 					<section id="features" class="container">
@@ -53,9 +58,11 @@
 				  </ul>
 				</section>
 			</div>
+{% endif %}
 			
-		  <!-- Banner Wrapper -->
-			<div id="banner-wrapper">
+{% if is_front %}
+  <!-- Banner Wrapper -->
+  <div id="banner-wrapper">
 				<div class="inner">
 					<!-- Banner -->
 						<section id="banner" class="container">
@@ -65,7 +72,9 @@
 						</section>
 				</div>
 			</div>
-			
+{% endif %}
+
+
 				<!-- Main Wrapper -->
 			<div id="main-wrapper">
 
@@ -76,9 +85,11 @@
 							<!-- Content -->
 								<div id="content" class="8u">
                   {% if page.content %}
-                  
+                  {{ page.content }} 
                   {% endif %}			
 								</div>
+								
+
 								
 							<!-- Sidebar -->
 								<div id="sidebar" class="4u">
@@ -112,7 +123,7 @@
 
 			</div>
 
-			
+
 			
 		  <!-- Footer Wrapper -->
 			<div id="footer-wrapper">

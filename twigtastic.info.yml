@@ -28,11 +28,4 @@ Stylesheets:
   - css/style-mobile.css
   - css/skel-noscript.css
 
-Scripts:
-  all:
-  - js/alert.js
-  - js/html5shiv.js
-  - js/jquery.dropotron.min
-  - js/jquery.min
-  - js/skel-panels.min  
-  - js/skel.min
+
